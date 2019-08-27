@@ -10,7 +10,7 @@ modulo operation, i.e `unqiue_index = long_hash % LOOKUP_TABLE_SIZE`. In case of
 from lookup table.
 
 ### Choosing lookup table size :
-It is clear that long hashes are mapped to lookup table usign modulo reduction. A lookup table size should be choosen in such a way that number of collisions are less.
+It is clear that long hashes are mapped to lookup table using modulo reduction. A lookup table size should be choosen in such a way that number of collisions are less.
 For example, if Lookup table is of length 1, every insertion is a collision, so probability is 1.0, similarly if we choose a lookup size of 3, the probability of
 collision will be reduced to 1/3. In general, if `N` is the size of lookup table, the probability of collision is `1/N`. Choosing large values of `N` can result in less collision,
 so most entries can be fetched in O(1) time. However, creating large lookup tables can occupy more memory. A lookup table of 
